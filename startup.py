@@ -45,6 +45,26 @@ def register_routes():
 
         register_document_routes(api)
 
+        from revit_mcp.electrical import register_electrical_routes
+
+        register_electrical_routes(api)
+
+        from revit_mcp.mechanical import register_mechanical_routes
+
+        register_mechanical_routes(api)
+
+        from revit_mcp.plumbing import register_plumbing_routes
+
+        register_plumbing_routes(api)
+
+        from revit_mcp.life_safety import register_life_safety_routes
+
+        register_life_safety_routes(api)
+
+        from revit_mcp.mep_coordination import register_mep_coordination_routes
+
+        register_mep_coordination_routes(api)
+
         logger.info("All MCP routes registered successfully")
 
     except Exception as e:

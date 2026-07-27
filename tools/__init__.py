@@ -13,6 +13,11 @@ def register_tools(mcp_server, revit_get_func, revit_post_func, revit_image_func
     from .code_execution_tools import register_code_execution_tools
     from .launch_tools import register_launch_tools
     from .document_tools import register_document_tools
+    from .electrical_tools import register_electrical_tools
+    from .mechanical_tools import register_mechanical_tools
+    from .plumbing_tools import register_plumbing_tools
+    from .life_safety_tools import register_life_safety_tools
+    from .mep_coordination_tools import register_mep_coordination_tools
 
     # Register tools from each module
     register_status_tools(mcp_server, revit_get_func)
@@ -25,3 +30,8 @@ def register_tools(mcp_server, revit_get_func, revit_post_func, revit_image_func
     )
     register_launch_tools(mcp_server, revit_get_func)
     register_document_tools(mcp_server, revit_get_func, revit_post_func)
+    register_electrical_tools(mcp_server, revit_get_func, revit_post_func, revit_image_func)
+    register_mechanical_tools(mcp_server, revit_get_func, revit_post_func, revit_image_func)
+    register_plumbing_tools(mcp_server, revit_get_func, revit_post_func, revit_image_func)
+    register_life_safety_tools(mcp_server, revit_get_func, revit_post_func, revit_image_func)
+    register_mep_coordination_tools(mcp_server, revit_get_func, revit_post_func, revit_image_func)

@@ -97,6 +97,25 @@ They never conflict because they serve different roles, speak different protocol
 | `close_document` | ✅ Implemented | Launch & Document | Close the active document |
 | `save_document` | ✅ Implemented | Launch & Document | Save or Save As the active document |
 | `sync_with_central` | ✅ Implemented | Launch & Document | Synchronize a workshared document with central |
+| `list_circuits` | ✅ Implemented | Electrical | List all electrical circuits with panel, load, voltage and wire size |
+| `list_panels` | ✅ Implemented | Electrical | List all electrical equipment (panels, transformers, etc.) |
+| `list_cable_trays` | ✅ Implemented | Electrical | List all cable trays with width, height and length |
+| `list_conduits` | ✅ Implemented | Electrical | List all conduits with diameter and length |
+| `list_wires` | ✅ Implemented | Electrical | List all electrical wires |
+| `get_electrical_settings` | ✅ Implemented | Electrical | Get project-wide voltage types and distribution systems |
+| `list_spaces` | ✅ Implemented | Mechanical | List all MEP spaces with area, volume, level, zone and loads |
+| `list_zones` | ✅ Implemented | Mechanical | List all HVAC zones with their contained space count |
+| `list_ducts` | ✅ Implemented | Mechanical | List all ducts/flex ducts with size, level and system |
+| `list_mechanical_systems` | ✅ Implemented | Mechanical | List all mechanical (duct) systems and connection status |
+| `get_duct_settings` | ✅ Implemented | Mechanical | Get project-wide duct settings and sizing parameters |
+| `list_pipes` | ✅ Implemented | Plumbing | List all pipes/flex pipes with size, level and system |
+| `list_piping_systems` | ✅ Implemented | Plumbing | List all piping systems (sanitary, heating, fire protection, etc.) |
+| `get_pipe_settings` | ✅ Implemented | Plumbing | Get project-wide pipe settings and sizing parameters |
+| `get_route_analysis_settings` | ✅ Implemented | Life Safety | Get project-wide egress/path-of-travel analysis settings |
+| `list_paths_of_travel` | ✅ Implemented | Life Safety | List existing path-of-travel (egress route) elements |
+| `check_unconnected_connectors` | ✅ Implemented | MEP Coordination | Find MEP connector ends that are not connected to anything |
+| `check_clashes` | ✅ Implemented | MEP Coordination | Find geometric clashes between two categories |
+| `export_mep_schedule` | ✅ Implemented | MEP Coordination | Get structured row/column data from a schedule view |
 | `get_selected_elements` | 🔄 Pending | Selection Management | Get information about currently selected elements |
 | `create_line_based_element` | 🔄 Pending | Element Creation | Create line-based elements (walls, beams, pipes) |
 | `create_surface_based_element` | 🔄 Pending | Element Creation | Create surface-based elements (floors, ceilings) |
